@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>AI Voice Assistant</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Welcome to AI Voice Assistant</h1>
+        <h3>by Lami</h3>
+        <p>Welcome to my page for AI voice assistance</p>
+        <br>
+        <button id="init" onclick="speak();">init</button>
+        <br>
+        <div class="container">
+            <form onsubmit="event.preventDefault();
+            conversationUserAdd(document.getElementById('input-text').value);openai_test();">
+            <input type="text" id="input-text"/>
+            <br>
+            <button id="Submit-button">Submit</button>
+            <br>
+            <br>
+            </form>
+
+            <div id="chat-container"></div>
+        </div>
+    </body>
+</html>
